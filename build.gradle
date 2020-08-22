@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '5.1.0'
+}
+
+group 'de.elliepotato'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+
+    /* Spigot */
+    maven { url 'https://hub.spigotmc.org/nexus/content/groups/public/' }
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+}
+
+dependencies {
+    /* Spigot 1.15.2 */
+    compileOnly group: 'org.spigotmc', name: 'spigot-api', version: '1.15.2-R0.1-SNAPSHOT'
+}
+
+shadowJar {
+    archiveName = "Jesus-v${version}.jar"
+}

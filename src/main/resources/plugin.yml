@@ -1,0 +1,4 @@
+main: de.elliepotato.jesus.LoggerPlugin
+name: Jesus
+version: 1.0
+api-version: 1.15
